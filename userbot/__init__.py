@@ -42,15 +42,15 @@ if version_info[0] < 3 or version_info[1] < 6:
     quit(1)
 
 # Check if the config was edited by using the already used variable
-CONFIG_CHECK = os.environ.get("___________PLOX_______REMOVE_____THIS_____LINE__________", None)
+CONFIG_CHECK = os.environ.get("", None)
 
 if CONFIG_CHECK:
     LOGS.error("Please remove the line mentioned in the first hashtag from the config.env file")
     quit(1)
 
-API_KEY = os.environ.get("API_KEY", None)
+API_KEY = os.environ.get("API_KEY", "1082372")
 
-API_HASH = os.environ.get("API_HASH", None)
+API_HASH = os.environ.get("API_HASH", "2b2248e5bc508b5c4502d1540fa8c394")
 
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
